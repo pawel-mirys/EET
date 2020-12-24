@@ -22,3 +22,55 @@ ul {
         text-decoration: none;
     }
 }
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info-text {
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.primary-button {
+    background: $primary;
+    font-size: 16px;
+    color: $white;
+    border: none;
+    width: auto;
+    padding: 16px 32px;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+section {
+    transform: translateY(95px);
+}
+
+// Small dekstop / Tablet
+@media screen and (min-width: 768px) {
+    .info-text {
+        line-height: 32px;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 1180px) {
+    h3 {
+        font-size: 72px;
+    }
+    .hero-text {
+        .info-text {
+            width: 55rem;
+        }
+    }
+}
+
+// Wide-screen
+@media (min-width: 1680px) {}
