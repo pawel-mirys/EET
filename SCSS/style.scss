@@ -12,6 +12,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth
 }
 
 ul {
@@ -21,4 +22,68 @@ ul {
         color: $black;
         text-decoration: none;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info-text {
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.primary-button {
+    background: $primary;
+    font-size: 16px;
+    color: $white;
+    border: none;
+    width: auto;
+    padding: 16px 32px;
+    border-radius: 4rem;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+section {
+    overflow-x: hidden;
+}
+
+h3,
+p {
+    color: $black;
+}
+
+// Small dekstop / Tablet
+@media screen and (min-width: 768px) {
+    .info-text {
+        line-height: 32px;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 1180px) {
+    h3 {
+        font-size: 72px;
+    }
+    .hero-text {
+        .info-text {
+            width: 60%;
+        }
+    }
+}
+
+// Wide-screen
+@media (min-width: 1680px) {}
+>>>>>>> Stashed changes

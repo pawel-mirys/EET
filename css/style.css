@@ -101,10 +101,158 @@
     height: 100%;
     width: 100%;
   }
+<<<<<<< Updated upstream
 
   #logo img {
     width: 230px;
     height: 48px;
+=======
+}
+header,
+.hero-image {
+  overflow-y: hidden;
+}
+
+#hero {
+  height: 460px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../assets/images/hero2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  transform: translateY(10vh);
+}
+.hero-text .primary-button {
+  align-self: center;
+}
+.hero-text h3,
+.hero-text p {
+  color: #ffffff;
+}
+
+.catchy {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text .primary-button {
+    align-self: flex-start;
+  }
+
+  .catchy {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .hero-image {
+    height: 80vh;
+    background-position-y: bottom;
+  }
+
+  .hero-text {
+    z-index: 100;
+    height: 90%;
+>>>>>>> Stashed changes
+  }
+  .hero-text .info-text {
+    width: 50%;
+  }
+}
+#perks {
+  height: 1390px;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+.perks-section-container {
+  width: 80%;
+  height: 90%;
+  margin: 120px auto auto auto;
+  overflow-y: hidden;
+}
+.perks-section-container .info-text {
+  margin: 30px 0;
+}
+
+.perk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 145px;
+}
+.perk .perk-img {
+  width: 80px;
+}
+.perk .perk-text {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.perks-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .perks-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .perk {
+    width: 40%;
+    height: 165px;
+  }
+  .perk .perk-img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .perk {
+    width: 30%;
+    height: 200px;
+  }
+  .perk .perk-img {
+    width: 120px;
+  }
+  .perk .perk-text {
+    font-size: 20px;
+  }
+
+  .perk-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex: 1 1 40rem;
+  }
+  .perk-info .info-text {
+    margin: 0;
+  }
+  .perk-info > * {
+    width: 50%;
   }
 }
 * {
@@ -114,6 +262,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -126,4 +275,61 @@ ul {
 ul a {
   color: #454545;
   text-decoration: none;
+<<<<<<< Updated upstream
+=======
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.info-text {
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.primary-button {
+  background: #D16A6E;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  width: auto;
+  padding: 16px 32px;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+.primary-button:hover {
+  opacity: 0.8;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+h3,
+p {
+  color: #454545;
+}
+
+@media screen and (min-width: 768px) {
+  .info-text {
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 1180px) {
+  h3 {
+    font-size: 72px;
+  }
+
+  .hero-text .info-text {
+    width: 60%;
+  }
+>>>>>>> Stashed changes
 }
