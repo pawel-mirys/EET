@@ -22,9 +22,6 @@ ul {
         color: $black;
         text-decoration: none;
     }
-<<<<<<< Updated upstream
-}
-=======
 }
 
 h3 {
@@ -60,6 +57,10 @@ p {
     color: $black;
 }
 
+section {
+    transform: translateY(95px);
+}
+
 // Small dekstop / Tablet
 @media screen and (min-width: 768px) {
     .info-text {
@@ -80,10 +81,12 @@ p {
     .hero-text {
         .info-text {
             width: 60%;
+            width: 55rem;
         }
     }
 }
 
 // Wide-screen
 @media (min-width: 1680px) {}
->>>>>>> Stashed changes
+
+@media (min-width: 1680px) {}
