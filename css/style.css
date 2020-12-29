@@ -120,16 +120,16 @@
     height: 100%;
     width: 100%;
   }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-
-  #logo img {
-    width: 230px;
-    height: 48px;
-=======
 }
-header,
 .hero-image {
+  overflow-y: hidden;
+}
+
+#hero {
+  height: 460px;
+}
+
+header {
   overflow-y: hidden;
 }
 
@@ -140,25 +140,6 @@ header,
 .hero-image {
   width: 100%;
   height: 70vh;
-=======
-}
-header,
-.hero-image {
-  overflow-y: hidden;
-}
-
-#hero {
-  height: 460px;
-}
-
-.hero-image {
-  width: 100%;
-<<<<<<< HEAD
-  height: 70vh;
-=======
-  height: 60vh;
->>>>>>> Hero
->>>>>>> master
   background-image: url(../assets/images/hero2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -171,50 +152,22 @@ header,
   align-items: flex-start;
   flex-direction: column;
   width: 80%;
-<<<<<<< HEAD
   height: 80%;
   margin: auto;
   transform: translateY(10vh);
-=======
-<<<<<<< HEAD
-  height: 80%;
-  margin: auto;
-  transform: translateY(10vh);
-=======
-  height: 100%;
-  margin: auto;
-  color: #ffffff;
->>>>>>> Hero
->>>>>>> master
 }
 .hero-text .primary-button {
   align-self: center;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
 .hero-text h3,
 .hero-text p {
   color: #ffffff;
 }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Hero
->>>>>>> master
 
 .catchy {
   font-size: 16px;
   font-weight: 400;
-<<<<<<< HEAD
   opacity: 0.6;
-=======
-<<<<<<< HEAD
-  opacity: 0.6;
-=======
->>>>>>> Hero
->>>>>>> master
 }
 
 @media screen and (min-width: 768px) {
@@ -225,26 +178,59 @@ header,
   .catchy {
     font-size: 24px;
   }
-<<<<<<< HEAD
 }
-@media screen and (min-width: 1180px) {
-=======
-<<<<<<< HEAD
+header,
+.hero-image {
+  overflow-y: hidden;
 }
-@media screen and (min-width: 1180px) {
-=======
 
-  .hero-image {
-    background-position-y: -10px;
+#hero {
+  height: 460px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../assets/images/hero2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  transform: translateY(10vh);
+}
+.hero-text .primary-button {
+  align-self: center;
+}
+.hero-text h3,
+.hero-text p {
+  color: #ffffff;
+}
+
+.catchy {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text .primary-button {
+    align-self: flex-start;
+  }
+
+  .catchy {
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1180px) {
-  header {
-    height: 100vh;
-  }
-
->>>>>>> Hero
->>>>>>> master
   .hero-image {
     height: 80vh;
     background-position-y: bottom;
@@ -253,94 +239,9 @@ header,
   .hero-text {
     z-index: 100;
     height: 90%;
-<<<<<<< HEAD
->>>>>>> Stashed changes
   }
   .hero-text .info-text {
     width: 50%;
-  }
-}
-#perks {
-  height: 1390px;
-  width: 100%;
-  background-color: #F6F6F6;
-}
-
-.perks-section-container {
-  width: 80%;
-  height: 90%;
-  margin: 120px auto auto auto;
-  overflow-y: hidden;
-}
-.perks-section-container .info-text {
-  margin: 30px 0;
-}
-
-.perk {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 145px;
-}
-.perk .perk-img {
-  width: 80px;
-}
-.perk .perk-text {
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.perks-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  height: 80%;
-}
-
-@media screen and (min-width: 768px) {
-  .perks-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .perk {
-    width: 40%;
-    height: 165px;
-  }
-  .perk .perk-img {
-    width: 100px;
-  }
-}
-@media screen and (min-width: 1180px) {
-  .perk {
-    width: 30%;
-    height: 200px;
-  }
-  .perk .perk-img {
-    width: 120px;
-  }
-  .perk .perk-text {
-    font-size: 20px;
-  }
-
-  .perk-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    flex: 1 1 40rem;
-  }
-  .perk-info .info-text {
-    margin: 0;
-  }
-  .perk-info > * {
-    width: 50%;
-=======
->>>>>>> Hero
   }
   .hero-text .info-text {
     width: 50%;
@@ -447,11 +348,6 @@ ul {
 ul a {
   color: #454545;
   text-decoration: none;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Hero
 }
 
 h3 {
@@ -474,7 +370,6 @@ h3 {
   border-radius: 4rem;
   cursor: pointer;
 }
-<<<<<<< HEAD
 .primary-button:hover {
   opacity: 0.8;
 }
@@ -486,9 +381,9 @@ section {
 h3,
 p {
   color: #454545;
-=======
-<<<<<<< HEAD
-.primary-button:hover {
+}
+h3:hover,
+p:hover {
   opacity: 0.8;
 }
 
@@ -499,12 +394,14 @@ section {
 h3,
 p {
   color: #454545;
-=======
+}
 
 section {
   transform: translateY(95px);
->>>>>>> Hero
->>>>>>> master
+}
+
+section {
+  transform: translateY(95px);
 }
 
 @media screen and (min-width: 768px) {
@@ -524,16 +421,9 @@ section {
   }
 
   .hero-text .info-text {
-<<<<<<< HEAD
     width: 60%;
-=======
-<<<<<<< HEAD
     width: 60%;
-  }
->>>>>>> Stashed changes
-=======
     width: 55rem;
->>>>>>> master
+    width: 55rem;
   }
->>>>>>> Hero
 }

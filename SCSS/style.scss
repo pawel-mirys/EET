@@ -22,12 +22,6 @@ ul {
         color: $black;
         text-decoration: none;
     }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-}
-=======
-=======
->>>>>>> Hero
 }
 
 h3 {
@@ -49,7 +43,6 @@ h3 {
     padding: 16px 32px;
     border-radius: 4rem;
     cursor: pointer;
-<<<<<<< HEAD
     &:hover {
         opacity: 0.8;
     }
@@ -62,8 +55,6 @@ section {
 h3,
 p {
     color: $black;
-=======
-<<<<<<< HEAD
     &:hover {
         opacity: 0.8;
     }
@@ -76,13 +67,14 @@ section {
 h3,
 p {
     color: $black;
-=======
 }
 
 section {
     transform: translateY(95px);
->>>>>>> Hero
->>>>>>> master
+}
+
+section {
+    transform: translateY(95px);
 }
 
 // Small dekstop / Tablet
@@ -104,23 +96,10 @@ section {
     }
     .hero-text {
         .info-text {
-<<<<<<< HEAD
             width: 60%;
-=======
-<<<<<<< HEAD
             width: 60%;
-=======
             width: 55rem;
->>>>>>> Hero
->>>>>>> master
+            width: 55rem;
         }
     }
 }
-
-// Wide-screen
-<<<<<<< HEAD
-@media (min-width: 1680px) {}
->>>>>>> Stashed changes
-=======
-@media (min-width: 1680px) {}
->>>>>>> Hero
