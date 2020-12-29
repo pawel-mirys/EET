@@ -81,6 +81,10 @@ section {
     transform: translateY(95px);
 }
 
+section {
+    transform: translateY(95px);
+}
+
 // Small dekstop / Tablet
 @media screen and (min-width: 768px) {
     .info-text {
@@ -101,6 +105,7 @@ section {
     .hero-text {
         .info-text {
             width: 60%;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             width: 60%;
             width: 55rem;
@@ -109,6 +114,8 @@ section {
     }
 }
 =======
+=======
+>>>>>>> Perks
             width: 55rem;
         }
     }
@@ -117,5 +124,9 @@ section {
 // Wide-screen
 @media (min-width: 1680px) {}
 
+<<<<<<< HEAD
 @media (min-width: 1680px) {}
 >>>>>>> Stashed changes
+=======
+@media (min-width: 1680px) {}
+>>>>>>> Perks
