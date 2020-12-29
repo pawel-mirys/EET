@@ -121,14 +121,18 @@
     width: 100%;
   }
 }
-header {
+header,
+.hero-image {
   overflow-y: hidden;
-  height: 70vh;
+}
+
+#hero {
+  height: 460px;
 }
 
 .hero-image {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-image: url(../assets/images/hero2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,17 +145,22 @@ header {
   align-items: flex-start;
   flex-direction: column;
   width: 80%;
-  height: 100%;
+  height: 80%;
   margin: auto;
-  color: #ffffff;
+  transform: translateY(10vh);
 }
 .hero-text .primary-button {
   align-self: center;
+}
+.hero-text h3,
+.hero-text p {
+  color: #ffffff;
 }
 
 .catchy {
   font-size: 16px;
   font-weight: 400;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 768px) {
@@ -162,16 +171,8 @@ header {
   .catchy {
     font-size: 24px;
   }
-
-  .hero-image {
-    background-position-y: -10px;
-  }
 }
 @media screen and (min-width: 1180px) {
-  header {
-    height: 100vh;
-  }
-
   .hero-image {
     height: 80vh;
     background-position-y: bottom;
@@ -181,6 +182,90 @@ header {
     z-index: 100;
     height: 90%;
   }
+  .hero-text .info-text {
+    width: 50%;
+  }
+}
+#perks {
+  height: 1390px;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+.perks-section-container {
+  width: 80%;
+  height: 90%;
+  margin: 120px auto auto auto;
+  overflow-y: hidden;
+}
+.perks-section-container .info-text {
+  margin: 30px 0;
+}
+
+.perk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 145px;
+}
+.perk .perk-img {
+  width: 80px;
+}
+.perk .perk-text {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.perks-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .perks-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .perk {
+    width: 40%;
+    height: 165px;
+  }
+  .perk .perk-img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .perk {
+    width: 30%;
+    height: 200px;
+  }
+  .perk .perk-img {
+    width: 120px;
+  }
+  .perk .perk-text {
+    font-size: 20px;
+  }
+
+  .perk-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex: 1 1 40rem;
+  }
+  .perk-info .info-text {
+    margin: 0;
+  }
+  .perk-info > * {
+    width: 50%;
+  }
 }
 * {
   padding: 0;
@@ -189,6 +274,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -223,9 +309,17 @@ h3 {
   border-radius: 4rem;
   cursor: pointer;
 }
+.primary-button:hover {
+  opacity: 0.8;
+}
 
 section {
-  transform: translateY(95px);
+  overflow-x: hidden;
+}
+
+h3,
+p {
+  color: #454545;
 }
 
 @media screen and (min-width: 768px) {
@@ -245,6 +339,6 @@ section {
   }
 
   .hero-text .info-text {
-    width: 55rem;
+    width: 60%;
   }
 }
