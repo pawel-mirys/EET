@@ -121,20 +121,9 @@
     width: 100%;
   }
 }
-.hero-image {
-  overflow-y: hidden;
-}
-
-#hero {
-  height: 460px;
-}
-
+.hero-image,
 header {
   overflow-y: hidden;
-}
-
-#hero {
-  height: 460px;
 }
 
 .hero-image {
@@ -152,9 +141,7 @@ header {
   align-items: flex-start;
   flex-direction: column;
   width: 80%;
-  height: 80%;
   margin: auto;
-  transform: translateY(10vh);
 }
 .hero-text .primary-button {
   align-self: center;
@@ -179,7 +166,6 @@ header {
     font-size: 24px;
   }
 }
-header,
 .hero-image {
   overflow-y: hidden;
 }
@@ -394,14 +380,6 @@ section {
 h3,
 p {
   color: #454545;
-}
-
-section {
-  transform: translateY(95px);
-}
-
-section {
-  transform: translateY(95px);
 }
 
 @media screen and (min-width: 768px) {

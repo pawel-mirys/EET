@@ -1,19 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-.hero-image {
-    overflow-y: hidden;
-}
-
-#hero {
-    height: 460px;
-}
-
+.hero-image,
 header {
     overflow-y: hidden;
-}
-
-#hero {
-    height: 460px;
 }
 
 .hero-image {
@@ -28,9 +15,7 @@ header {
 .hero-text {
     @include flex(space-evenly, flex-start, column);
     width: 80%;
-    height: 80%;
     margin: auto;
-    transform: translateY(10vh);
     .primary-button {
         align-self: center;
     }
@@ -58,11 +43,6 @@ header {
     }
 }
 
-header,
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Perks
 .hero-image {
     overflow-y: hidden;
 }
@@ -129,11 +109,4 @@ header,
             width: 50%;
         }
     }
-<<<<<<< Updated upstream
 }
-=======
-}
-
-//   Desktops - large
-@media (min-width: 1680px) {}
->>>>>>> Stashed changes
