@@ -22,9 +22,12 @@ ul {
         color: $black;
         text-decoration: none;
     }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 }
 =======
+=======
+>>>>>>> Hero
 }
 
 h3 {
@@ -46,6 +49,7 @@ h3 {
     padding: 16px 32px;
     border-radius: 4rem;
     cursor: pointer;
+<<<<<<< HEAD
     &:hover {
         opacity: 0.8;
     }
@@ -58,6 +62,12 @@ section {
 h3,
 p {
     color: $black;
+=======
+}
+
+section {
+    transform: translateY(95px);
+>>>>>>> Hero
 }
 
 // Small dekstop / Tablet
@@ -79,11 +89,19 @@ p {
     }
     .hero-text {
         .info-text {
+<<<<<<< HEAD
             width: 60%;
+=======
+            width: 55rem;
+>>>>>>> Hero
         }
     }
 }
 
 // Wide-screen
+<<<<<<< HEAD
 @media (min-width: 1680px) {}
 >>>>>>> Stashed changes
+=======
+@media (min-width: 1680px) {}
+>>>>>>> Hero

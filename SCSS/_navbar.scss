@@ -3,13 +3,16 @@
     min-height: 10vh;
     width: 100%;
     z-index: 100;
-    background: $lightGray
+    background: $lightGray;
+    position: fixed;
 }
 
 .nav-container {
     @include flex(space-between, center, row);
     width: 80%;
     margin: auto;
+    position: fixed;
+    z-index: 100;
 }
 
 .links {
@@ -18,8 +21,9 @@
     left: 100%;
     width: 100%;
     height: 35vh;
-    position: absolute;
+    position: fixed;
     transition: 0.5s all ease-in-out;
+    z-index: 100;
     &.active {
         left: 0%;
     }
@@ -81,7 +85,25 @@
 
 // Responsive
 // Small dekstop / Tablet
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+    .burger {
+        width: 3rem;
+        height: 3rem;
+        .bar {
+            width: 3rem;
+            height: 3px;
+        }
+    }
+    #logo {
+        img {
+            width: 230px;
+            height: 48px;
+        }
+    }
+}
+
+//  Desktops
+@media screen and (min-width: 1180px) {
     .burger {
         display: none;
     }
@@ -96,31 +118,8 @@
         height: 100%;
         width: 100%;
     }
-    #logo {
-        img {
-            width: 230px;
-            height: 48px;
-        }
-    }
 }
 
-//  Desktops
-@media screen and (min-width: 1366px) {}
+@media screen and (min-width: 1140px) {}
 
-//   Desktops - large
-// @media (min-width: 1680px) {
-//     .burger {
-//         display: none;
-//     }
-//     .links {
-//         background: $lightGray;
-//         width: 60%;
-//         height: 100%;
-//         position: static;
-//     }
-//     .navigation {
-//         @include flex(space-between, center, row);
-//         height: 100%;
-//         width: 100%;
-//     }
-// }
+@media (min-width: 1920px) {}

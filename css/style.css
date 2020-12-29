@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 100;
   background: #F6F6F6;
+  position: fixed;
 }
 
 .nav-container {
@@ -16,6 +17,8 @@
   flex-direction: row;
   width: 80%;
   margin: auto;
+  position: fixed;
+  z-index: 100;
 }
 
 .links {
@@ -24,8 +27,9 @@
   left: 100%;
   width: 100%;
   height: 35vh;
-  position: absolute;
+  position: fixed;
   transition: 0.5s all ease-in-out;
+  z-index: 100;
 }
 .links.active {
   left: 0%;
@@ -81,7 +85,22 @@
   position: absolute;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+  .burger {
+    width: 3rem;
+    height: 3rem;
+  }
+  .burger .bar {
+    width: 3rem;
+    height: 3px;
+  }
+
+  #logo img {
+    width: 230px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1180px) {
   .burger {
     display: none;
   }
@@ -101,6 +120,7 @@
     height: 100%;
     width: 100%;
   }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
   #logo img {
@@ -120,6 +140,17 @@ header,
 .hero-image {
   width: 100%;
   height: 70vh;
+=======
+}
+header {
+  overflow-y: hidden;
+  height: 70vh;
+}
+
+.hero-image {
+  width: 100%;
+  height: 60vh;
+>>>>>>> Hero
   background-image: url(../assets/images/hero2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,22 +163,34 @@ header,
   align-items: flex-start;
   flex-direction: column;
   width: 80%;
+<<<<<<< HEAD
   height: 80%;
   margin: auto;
   transform: translateY(10vh);
+=======
+  height: 100%;
+  margin: auto;
+  color: #ffffff;
+>>>>>>> Hero
 }
 .hero-text .primary-button {
   align-self: center;
 }
+<<<<<<< HEAD
 .hero-text h3,
 .hero-text p {
   color: #ffffff;
 }
+=======
+>>>>>>> Hero
 
 .catchy {
   font-size: 16px;
   font-weight: 400;
+<<<<<<< HEAD
   opacity: 0.6;
+=======
+>>>>>>> Hero
 }
 
 @media screen and (min-width: 768px) {
@@ -158,8 +201,21 @@ header,
   .catchy {
     font-size: 24px;
   }
+<<<<<<< HEAD
 }
 @media screen and (min-width: 1180px) {
+=======
+
+  .hero-image {
+    background-position-y: -10px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  header {
+    height: 100vh;
+  }
+
+>>>>>>> Hero
   .hero-image {
     height: 80vh;
     background-position-y: bottom;
@@ -168,6 +224,7 @@ header,
   .hero-text {
     z-index: 100;
     height: 90%;
+<<<<<<< HEAD
 >>>>>>> Stashed changes
   }
   .hero-text .info-text {
@@ -253,6 +310,8 @@ header,
   }
   .perk-info > * {
     width: 50%;
+=======
+>>>>>>> Hero
   }
 }
 * {
@@ -275,8 +334,11 @@ ul {
 ul a {
   color: #454545;
   text-decoration: none;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Hero
 }
 
 h3 {
@@ -299,6 +361,7 @@ h3 {
   border-radius: 4rem;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .primary-button:hover {
   opacity: 0.8;
 }
@@ -310,6 +373,11 @@ section {
 h3,
 p {
   color: #454545;
+=======
+
+section {
+  transform: translateY(95px);
+>>>>>>> Hero
 }
 
 @media screen and (min-width: 768px) {
@@ -329,7 +397,12 @@ p {
   }
 
   .hero-text .info-text {
+<<<<<<< HEAD
     width: 60%;
   }
 >>>>>>> Stashed changes
+=======
+    width: 55rem;
+  }
+>>>>>>> Hero
 }
