@@ -2,6 +2,7 @@
 @import "navbar";
 @import "hero";
 @import "perks";
+@import "perks2";
 @import "references";
 @import "bhp";
 @import "contact";
@@ -29,6 +30,10 @@ h3 {
     font-weight: 700;
 }
 
+h4 {
+    font-size: 24px;
+}
+
 .info-text {
     line-height: 26px;
     font-size: 16px;
@@ -48,6 +53,16 @@ h3 {
     }
 }
 
+.second-primary-button {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    color: $primary;
+    font-weight: 700;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 section {
     overflow-x: hidden;
 }
@@ -55,9 +70,6 @@ section {
 h3,
 p {
     color: $black;
-    &:hover {
-        opacity: 0.8;
-    }
 }
 
 section {
@@ -79,6 +91,9 @@ p {
         font-size: 32px;
         font-weight: 700;
     }
+    h4 {
+        font-size: 32px;
+    }
 }
 
 // Desktop
@@ -86,11 +101,12 @@ p {
     h3 {
         font-size: 72px;
     }
+    h4 {
+        font-size: 40px;
+    }
     .hero-text {
         .info-text {
             width: 60%;
-            width: 60%;
-            width: 55rem;
             width: 55rem;
         }
     }

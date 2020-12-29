@@ -234,7 +234,6 @@ header {
   }
 }
 #perks {
-  height: 1390px;
   width: 100%;
   background-color: #F6F6F6;
 }
@@ -249,13 +248,19 @@ header {
   margin: 30px 0;
 }
 
+.perks2-section-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
 .perk {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 145px;
+  margin: 60px auto;
 }
 .perk .perk-img {
   width: 80px;
@@ -341,6 +346,10 @@ h3 {
   font-weight: 700;
 }
 
+h4 {
+  font-size: 24px;
+}
+
 .info-text {
   line-height: 26px;
   font-size: 16px;
@@ -360,6 +369,16 @@ h3 {
   opacity: 0.8;
 }
 
+.second-primary-button {
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  color: #D16A6E;
+  font-weight: 700;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 section {
   overflow-x: hidden;
 }
@@ -367,10 +386,6 @@ section {
 h3,
 p {
   color: #454545;
-}
-h3:hover,
-p:hover {
-  opacity: 0.8;
 }
 
 section {
@@ -392,16 +407,22 @@ p {
     font-size: 32px;
     font-weight: 700;
   }
+
+  h4 {
+    font-size: 32px;
+  }
 }
 @media screen and (min-width: 1180px) {
   h3 {
     font-size: 72px;
   }
 
+  h4 {
+    font-size: 40px;
+  }
+
   .hero-text .info-text {
     width: 60%;
-    width: 60%;
-    width: 55rem;
     width: 55rem;
   }
 }
