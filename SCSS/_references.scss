@@ -5,6 +5,10 @@
 .references-container {
     width: 80%;
     margin: 50px auto;
+    .primary-button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .references-text {
@@ -13,18 +17,73 @@
     }
 }
 
-.companies {
+.company-card,
+.card-text-container {
+    @include flex(space-evenly, flex-start, column);
+}
+
+.company-card {
+    height: 255px;
+    margin-bottom: 60px;
+    .company-text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .second-primary-button {
+        margin: 0;
+        transform: none;
+    }
+}
+
+.card-text-container {
+    height: 60%;
+}
+
+.tameh {
+    img {
+        width: 300px;
+    }
+}
+
+.eko,
+.gzog {
+    img {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .company-card {
-        @include flex(space-evenly, flex-start, column);
-        height: 245px;
-        margin-bottom: 60px;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        height: 235px;
+        .card-text-container {
+            width: 40%;
+            margin-left: 60px;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .company-card {
         .company-text {
             font-size: 18px;
-            font-weight: 500;
         }
         .second-primary-button {
-            margin: 0;
-            transform: none;
+            font-size: 18px;
+        }
+    }
+    .tameh {
+        img {
+            width: 400px;
+        }
+    }
+    .eko,
+    .gzog {
+        img {
+            width: 120px;
         }
     }
 }
