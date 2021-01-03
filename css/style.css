@@ -319,6 +319,36 @@ header {
     width: 50%;
   }
 }
+#references {
+  background-color: #F6F6F6;
+}
+
+.references-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.references-text p {
+  margin: 30px auto 60px auto;
+}
+
+.companies .company-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 245px;
+  margin-bottom: 60px;
+}
+.companies .company-card .company-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.companies .company-card .second-primary-button {
+  margin: 0;
+  transform: none;
+}
+
 * {
   padding: 0;
   margin: 0;

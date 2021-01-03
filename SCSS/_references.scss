@@ -1,0 +1,30 @@
+#references {
+    background-color: $lightGray;
+}
+
+.references-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.references-text {
+    p {
+        margin: 30px auto 60px auto;
+    }
+}
+
+.companies {
+    .company-card {
+        @include flex(space-evenly, flex-start, column);
+        height: 245px;
+        margin-bottom: 60px;
+        .company-text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .second-primary-button {
+            margin: 0;
+            transform: none;
+        }
+    }
+}
