@@ -1,0 +1,59 @@
+.bhp-container {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.bhp-text {
+    margin: 35px auto 65px auto;
+}
+
+.pdf {
+    @include flex(space-around, center, column);
+    height: 180px;
+    margin-bottom: 65px;
+    img {
+        width: 80px;
+    }
+    .second-primary-button {
+        margin: 0;
+        transform: none;
+    }
+    p {
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pdf-container {
+        @include flex(space-around, center, row)
+    }
+    .pdf {
+        p {
+            font-size: 18px;
+        }
+        img {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .bhp-container {
+        @include flex(flex-start, flex-start, row);
+        flex-wrap: wrap;
+        .bhp-text {
+            width: 40%;
+        }
+    }
+    .pdf-container {
+        width: 60%;
+        .pdf {
+            width: 50%;
+            margin: 0;
+        }
+    }
+    .bhp-text,
+    .pdf-container {
+        margin: 65px auto 65px auto;
+    }
+}

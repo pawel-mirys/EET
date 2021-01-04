@@ -400,6 +400,74 @@ header {
     width: 120px;
   }
 }
+.bhp-container {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.bhp-text {
+  margin: 35px auto 65px auto;
+}
+
+.pdf {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 180px;
+  margin-bottom: 65px;
+}
+.pdf img {
+  width: 80px;
+}
+.pdf .second-primary-button {
+  margin: 0;
+  transform: none;
+}
+.pdf p {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .pdf-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .pdf p {
+    font-size: 18px;
+  }
+  .pdf img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .bhp-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .bhp-container .bhp-text {
+    width: 40%;
+  }
+
+  .pdf-container {
+    width: 60%;
+  }
+  .pdf-container .pdf {
+    width: 50%;
+    margin: 0;
+  }
+
+  .bhp-text,
+.pdf-container {
+    margin: 65px auto 65px auto;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -464,15 +532,7 @@ section {
   overflow-x: hidden;
 }
 
-h3,
-p {
-  color: #454545;
-}
-
-section {
-  overflow-x: hidden;
-}
-
+h4,
 h3,
 p {
   color: #454545;
