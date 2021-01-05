@@ -330,6 +330,7 @@ header {
 .references-container .primary-button {
   margin-left: 50%;
   transform: translateX(-50%);
+  width: 160px;
 }
 
 .references-text p {
@@ -362,7 +363,7 @@ header {
 }
 
 .tameh img {
-  width: 300px;
+  width: 280px;
 }
 
 .eko img,
@@ -454,6 +455,9 @@ header {
   .bhp-container .bhp-text {
     width: 40%;
   }
+  .bhp-container h3 {
+    width: 100%;
+  }
 
   .pdf-container {
     width: 60%;
@@ -466,6 +470,114 @@ header {
   .bhp-text,
 .pdf-container {
     margin: 65px auto 65px auto;
+  }
+}
+.contact-container {
+  width: 85%;
+  margin: auto;
+}
+.contact-container h3 {
+  margin-bottom: 45px;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 190px;
+  margin-bottom: 60px;
+}
+.contact-card h4 {
+  font-size: 20px;
+}
+.contact-card p {
+  font-weight: 500;
+}
+
+.employees {
+  border: 2px solid #C3C2C2;
+  border-left: none;
+  border-right: none;
+  margin: 45px 0;
+  padding: 45px 0;
+}
+.employees :last-child {
+  margin-bottom: 0;
+}
+
+.phone,
+.email {
+  width: 100%;
+}
+.phone p,
+.email p {
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 16px;
+  font-weight: 400;
+}
+.phone img,
+.email img {
+  width: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    width: 80%;
+  }
+
+  .contact-card {
+    width: 80%;
+    height: 200px;
+  }
+  .contact-card p {
+    font-size: 18px;
+  }
+  .contact-card h4 {
+    font-size: 24px;
+  }
+
+  .phone,
+.email {
+    width: 100%;
+  }
+  .phone p,
+.email p {
+    display: inline-block;
+    margin-left: 16px;
+  }
+  .phone img,
+.email img {
+    width: 26px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .contact-container p {
+    font-size: 18px;
+  }
+  .contact-container h3 {
+    width: 50%;
+  }
+
+  .contact-container,
+.employees {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact-card {
+    width: 45%;
+  }
+  .contact-card:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+  .contact-card h4 {
+    font-size: 32px;
   }
 }
 * {
@@ -506,26 +618,31 @@ h4 {
 
 .primary-button {
   background: #D16A6E;
-  font-size: 16px;
   color: #ffffff;
   border: none;
   width: auto;
   padding: 16px 32px;
   border-radius: 4rem;
   cursor: pointer;
-}
-.primary-button:hover {
-  opacity: 0.8;
+  outline: none;
 }
 
 .second-primary-button {
   display: inline-block;
-  font-size: 16px;
   cursor: pointer;
   color: #D16A6E;
   font-weight: 700;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.primary-button,
+.second-primary-button {
+  font-size: 16px;
+}
+.primary-button:hover,
+.second-primary-button:hover {
+  opacity: 0.8;
 }
 
 section {

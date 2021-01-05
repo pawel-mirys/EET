@@ -40,26 +40,30 @@ h4 {
 
 .primary-button {
     background: $primary;
-    font-size: 16px;
     color: $white;
     border: none;
     width: auto;
     padding: 16px 32px;
     border-radius: 4rem;
     cursor: pointer;
-    &:hover {
-        opacity: 0.8;
-    }
+    outline: none;
 }
 
 .second-primary-button {
     display: inline-block;
-    font-size: 16px;
     cursor: pointer;
     color: $primary;
     font-weight: 700;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.primary-button,
+.second-primary-button {
+    &:hover {
+        opacity: 0.8;
+    }
+    font-size: 16px;
 }
 
 section {
