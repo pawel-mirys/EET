@@ -1,6 +1,11 @@
+.company-info,
 .contact-container {
     width: 85%;
     margin: auto;
+}
+
+.contact-container {
+    margin: 100px auto 0 auto;
     h3 {
         margin-bottom: 45px;
     }
@@ -44,6 +49,32 @@
     }
 }
 
+.company-info {
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+}
+
+.info-card {
+    &.short {
+        width: 45%;
+    }
+}
+
+.info-card {
+    @include flex(space-around, center, column);
+    height: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    h4,
+    p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    p {
+        font-weight: 400;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .contact-container {
         width: 80%;
@@ -68,6 +99,30 @@
         img {
             width: 26px;
         }
+    }
+    .info-card {
+        width: 100%;
+        height: 50px;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px;
+        h4 {
+            margin-right: 10px;
+            font-size: 25px;
+        }
+        p {
+            font-size: 20px;
+        }
+        &.short {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 30%;
+            height: 60px;
+        }
+    }
+    .map-frame {
+        height: 300px !important;
     }
 }
 

@@ -1,10 +1,15 @@
 const burger = document.querySelector(".burger");
 const links = document.querySelector(".links");
+const year = document.querySelector('.year');
 const navLinks = Array.from(document.querySelectorAll('.nav-link'));
 const burgerBars = Array.from(burger.children);
 const cards = Array.from(document.querySelectorAll('.company-card'));
 const phone = Array.from(document.querySelectorAll('.phone'));
 const email = Array.from(document.querySelectorAll('.email'));
+const newYear = new Date();
+
+year.innerHTML = `&reg;` + newYear.getFullYear();
+
 
 burger.addEventListener('click', () => {
     links.classList.toggle('active');
