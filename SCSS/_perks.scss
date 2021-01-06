@@ -37,6 +37,49 @@
                 height: 80%;
             }
             
+            .floating-container {
+                background-color: $lightGray;
+                position: fixed;
+                display: none;
+                z-index: 55;
+                height: 50vh;
+                width: 80%;
+                margin: auto 10%;
+                top: 20%;
+                &.active {
+                    @include flex(space-around, center, column);
+                    -webkit-animation: fadeInFromNone 0.5s ease-out;
+                    -moz-animation: fadeInFromNone 0.5s ease-out;
+                    -o-animation: fadeInFromNone 0.5s ease-out;
+                    animation: fadeInFromNone 0.5s ease-out;
+                }
+                .perks-list {
+                    @include flex(space-around, flex-start, column);
+                    position: relative;
+                    width: 90%;
+                    height: 90%;
+                    list-style: square;
+                    li {
+                        font-size: 14px;
+                        color: $black;
+                    }
+                }
+                .close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 14px;
+                    text-align: center;
+                    background: none;
+                    border: 1px solid $black;
+                    border-radius: 10px;
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+            }
+            
             // Responsive
             @media screen and (min-width: 768px) {
                 .perks-container {

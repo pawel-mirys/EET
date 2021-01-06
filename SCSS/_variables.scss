@@ -11,3 +11,54 @@ $white: #ffffff;
     align-items: $align;
     flex-direction: $direction;
 }
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: flex;
+        ;
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        ;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: flex;
+        ;
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        ;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: flex;
+        ;
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        ;
+        opacity: 1;
+    }
+}

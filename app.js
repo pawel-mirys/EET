@@ -1,15 +1,18 @@
 const burger = document.querySelector(".burger");
 const links = document.querySelector(".links");
 const year = document.querySelector('.year');
+const perksButton = document.querySelector('.perks-button')
+const main = document.querySelector('main');
+const floatingContainer = document.querySelector('.floating-container');
+const closeButton = document.querySelector('.close');
 const navLinks = Array.from(document.querySelectorAll('.nav-link'));
 const burgerBars = Array.from(burger.children);
 const cards = Array.from(document.querySelectorAll('.company-card'));
 const phone = Array.from(document.querySelectorAll('.phone'));
 const email = Array.from(document.querySelectorAll('.email'));
-const newYear = new Date();
 
-year.innerHTML = `&reg;` + newYear.getFullYear();
 
+year.innerHTML = `&reg;` + new Date().getFullYear();
 
 burger.addEventListener('click', () => {
     links.classList.toggle('active');
@@ -39,3 +42,13 @@ phone.forEach(phone => {
 email.forEach(mail => {
     mail.firstElementChild.src = './assets/icons/at.svg';
 });
+
+perksButton.addEventListener('click', () => {
+    main.classList.add('blured');
+    floatingContainer.classList.add('active');
+})
+
+closeButton.addEventListener('click', () => {
+    main.classList.remove('blured');
+    floatingContainer.classList.remove('active');
+})
